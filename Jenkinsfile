@@ -5,7 +5,7 @@ pipeline {
         stage ('clone') {
             agent { label 'poorna' }
             when {
-  branch 'master'
+  expression {env.GIT_BRANCH == 'origin/main'}
 }
             steps {
             git branch: 'master', url: 'https://github.com/poornendra002/c-project.git'
