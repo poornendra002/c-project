@@ -8,7 +8,7 @@ pipeline {
   branch 'master'
 }
             steps {
-            git branch: 'main', url: 'https://github.com/poornendra002/c-project.git'
+            git branch: 'master', url: 'https://github.com/poornendra002/c-project.git'
 }
         }
         stage ('build') {
